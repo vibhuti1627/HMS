@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Be-Well Hospital</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link  rel="stylesheet" type="text/css" href="css/homeCSS.css">  
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+        <style media="screen">
+
+            .id3,.id4{
+                width:80%;
+                margin-left:100px;
+                margin-bottom:30px;
+                padding:20px;
+                background-color: lightblue;
+                border-radius: 30px;
+            }
+
+            .id3 .carousel-cell {
+                width: 100%;
+            }
+            .id3 .carousel-cell p{
+                padding-left:60px;
+                padding-right:50px;
+            }
+            .id3 span{
+                margin-left:30%;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            /* cell number */
+            .id3 .carousel-cell:before {
+                display: block;
+            } 
+
+        </style>
+    </head>
+
+    <body onload="slider();">
+
+        <div class="banner">
+            <div class="slider">
+                <img src="images/slider/1.jpg" id="slideImg">
+            </div>
+            <div class="overlay">
+                <nav id="bar1">
+                    <label><a href="index.html" target="_self">Be-Well</a></label>
+                    <ul class="menu-icons">    
+                        <li> <a href="index.html" target="_self" >Home</a></li> 
+                        <li> <a href="#i2" > About </a></li>              
+                        <li> <a href="findadoc.jsp" target="_blank">Find a Doctor</a></li>
+                        <li> <a href="login.html" target="_blank" >Login/SignUp</a></li>      
+                        <li> <a href="bookapptform.jsp" target="_blank">Book Appointment</a></li>   
+                        <li> <a href="feedback.html" target="_blank">Contact Us</a></li>                                   
+                        <li> <a href="userpro.jsp" target="_blank">My Profile</a></li>  
+                    </ul>
+                </nav>
+                <div class="content">
+                    <h1>Your health is<br> our priority.</h1>
+                    <h3>We at Be-well are fully focuses to serve the best.</h3>
+                    <div>
+                        <a href="bookapptform.jsp" target="_blank"><button type="button">Appointment</button></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="box">
+            <h3 id=os>Our Services</h3>
+            <div class="our-service">
+                <img src="images/Consultation.png" >
+                <h3>Consultations</h3>
+            </div>
+            <div class="our-service">
+                <img src="images/diagnostic.png" >
+                <h3>Diagnostics</h3>
+            </div>
+            <div class="our-service">
+                <img src="images/health-check.png" >
+                <h3>Health Checks</h3>
+            </div>
+            <div class="our-service">
+                <img src="images/dental-care.png" >
+                <h3>Dental Care</h3>
+            </div>
+            <div class="our-service">
+                <img src="images/DiabeticTestVer_2.png" >
+                <h3>Diabetes Care</h3>
+            </div>
+            <div class="our-service">
+                <img src="images/treatment-room.png" >
+                <h3>Treatment Rooms</h3>
+            </div>
+            <div class="our-service">
+                <img src="images/vaccination.png" >
+                <h3>Vaccinations</h3>
+            </div>
+        </div>
+        <div id=i1 > 
+            <h3 id=i2 style="padding-top:50px;"> What is a <span>Hospital Management <br>System</span> (HMS)?</h3>
+            <p>
+                The Hospital management system can provide an automated way of managing BE-Well Hospital activity rather than a traditional system. Moreover, this system can operate regular hospital activities like billing,test,bed management,etc. accurately and efficiently. Also, it helps to generate the daily,weekly,monthly, half-yearly, and yearly  reports of sales, revenue,  patient,bed managenment, etc. as your requirement easily. The most important think is that an admin  can observe everyone through 
+                the software. HMS helps you to be with the trand, and it also gives you the chance to run your business administration digitally and efficiently.
+            </p> 
+            <p>Hospital Management System or HMS Software is mainly a system that can help
+                to maintain any hospital activities properly and easily. Moreover, the hospital
+                Management systemcan be used as clinical software.Also, it helps to keep records
+                and monitor the activities of any hospital. So, this is a complete HMS software
+                and cheapest and easiest solution for managaing hospital activities.
+            </p>
+            <p style="padding-bottom:30px;">
+                Our <span>Target </span> is Treating patients as our family members, 
+                we save lives and reduce suffering by 
+                offering compassionate tertiary healthcare.
+            </p>
+        </div>
+        <div class="box1">
+            <h3 id=sf>Special Facilities</h3>
+            <div class="sf">
+                <img src="images/sp.webp" >
+                <h3>Speech Therapist</h3>
+                <p>
+                    We provide the best & trained speech therapist to improve the speech.
+                    Just Beleive on youself.
+                </p>
+            </div>
+            <div class="sf">
+                <img src="images/bp.webp" >
+                <h3>Back Pain</h3>
+                <p>
+                    Other than inhuries, there are multiple reasons for back pain.
+                    Free yourself from pains with our help.
+                </p>
+            </div>
+            <div class="sf">
+                <img src="images/wl.webp" >
+                <h3>Weight Loss Center</h3>
+                <p>
+                    Being over weight results in many discomforts and disorders.Contact us now for the easy weight loss.
+                </p>
+            </div>
+            <div class="sf">
+                <img src="images/wlp.webp" >
+                <h3>Slimming Center</h3>
+                <p>
+                    We are one of the best slimming centers,with an aim to sculpt your body in perfect shape.
+                </p>
+            </div>
+            <div class="sf">
+                <img src="images/mp.webp" >
+                <h3>Muscular Pain</h3>
+                <p>
+                    Physical Exertion can lead to muscle pain.Don'tneglect the symptoms and visit our experts.
+                </p>
+            </div>
+            <div class="sf">
+                <img src="images/phy.webp" >
+                <h3>Physiotherapist</h3>
+                <p>
+                    At our physiotherapy centers we offer services like heat therapy,Occupational therapy.
+                </p>
+            </div>
+            <div class="sf">
+                <img src="images/fs.jpg" >
+                <h3>Frozen Shoulder</h3>
+                <p>
+                    Stiffness and pain in the shoulder joint?
+                    Seek advice from doctor to relieve yourself from the ailment.
+                </p>
+            </div>
+            <div class="sf">
+                <img src="images/jp.webp" >
+                <h3>Joint Pain</h3>
+                <p>
+                    Osteoarthritis,rheumatoid arthritis,bursitis,gout,strain should be the reason. we can help.
+                </p>
+            </div>
+        </div>
+        <div class="id3">
+            <h2 class="w3-center">Our Patient Speak</h2>
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }' style="height: 150px;">
+                <div class="carousel-cell">
+                    <p>
+                        I visited the Be-well hospital for my treatment. 
+                        The staff was very supportive and provided with all the necessary information.
+                        I liked the technical expertise provided by the nurses, phlebotomist and radiology technicians.
+                        The services were fast and reports were ready on time.
+                        <br>
+                        <span>--Anupriya Kumari</span>
+                    </p>
+                </div>
+                <div class="carousel-cell">
+                    <p>
+                        My experience at the Be-well hospital was very good. 
+                        I particularly liked the good management and their fast services.
+                        From getting appointment, cleanliness, time of billing, getting 
+                        results to the waiting time, everything was very efficient.
+                        I will surely make this clinic my regular source of care.
+                        <br>
+                        <span>--Saumya Keshri</span>
+                    </p>
+                </div>
+                <div class="carousel-cell">
+                    <p>
+                        In my experience, here at the Be-well hospital, I found the treatment given 
+                        to patients to be excellent. All reports were ready at the committed time, 
+                        and everything was so efficient and adequately taken care of, that I am 
+                        considering making the Velachery clinic my regular source of care. 
+                        <br>
+                        <span>--Abhishek Chauhan</span>
+                    </p>    
+                </div>
+                <div class="carousel-cell">
+                    <p>
+                        I visited Be-well for my treatment, during which I found the staff 
+                        to be very good and caring. Getting an appointment was easy and the
+                        doctor efficiently explained to me the diagnosis and treatment.
+                        The reports were ready on the committed time and the waiting time was less. The premise was clean and I wish to make this my regular source of care.. 
+                        <br>
+                        <span>--Ashok Kumar</span>
+                    </p>    
+                </div>
+                <div class="carousel-cell">
+                    <p>
+                        At the Be-Well Hospital, I found the staff to be very approachable 
+                        and polite. The services provided to me were very good and efficient, 
+                        and I am very satisfied with my treatment and overall experience here.							<br>
+                        <span>--Disha Singh</span>
+                    </p>    
+                </div>
+            </div> 
+        </div>
+        <div class="id4">
+            <h2 class="w3-center">Health Tips</h2>
+            <a href="#" style="color:rgb(26, 92, 92); font-size:15px;">Tips to Deal with dry Mouth</a>
+            <p>
+                If you have ever gone through a dry mouth spell, you know how uncomfortable it is. 
+                Known as Xerostomia in medical terms, a dry mouth condition is not very uncommon in people these days.
+                Causes of dry mouth:
+                Dry mouth can take place when the glands in your mouth do not make saliva properly....<a href="#" style="color:blue;">read more</a>
+            </p>
+        </div>
+
+
+        <!-- footer section starts  -->
+
+        <footer>
+            <ul class="social-icons">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="index.html">Home |</a></li>
+                <li><a href="findadoc.jsp">Find a Doctor |</a></li>
+                <li><a href="feedback.html">Contact Us</a></li>
+            </ul>
+            <p><span>@2022 Be-Well Management system | All Rights Reserved</span>></p>
+        </footer>
+        <!-- footer section ends  -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+        var slideImg = document.getElementById("slideImg");
+        var images = new Array(
+                "images/slider/1.jpg",
+                "images/slider/5.jpg"
+                );
+        var len = images.length;
+        var i = 0;
+        function slider() {
+            if (i > len - 1) {
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()', 3000);
+        }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    </body>
+</html>

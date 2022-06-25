@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link  rel="stylesheet" type="text/css" href="css/feedbackcss.css"> 
+
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Poppins:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+        <style>
+
+            .bg {
+                animation:slide 3s ease-in-out infinite alternate;
+                background-image: linear-gradient(-60deg, #722F37 50%, #F5DEB3 50%);
+                bottom:0;
+                left:-50%;
+                opacity:.5;
+                position:fixed;
+                right:-50%;
+                top:0;
+                z-index:-1;
+            }
+
+            .bg2 {
+                animation-direction:alternate-reverse;
+                animation-duration:4s;
+            }
+
+            .bg3 {
+                animation-duration:5s;
+            }
+
+
+            @keyframes slide {
+                0% {
+                    transform:translateX(-25%);
+                }
+                100% {
+                    transform:translateX(25%);
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="index.html" target="_self" style="color:white;font-weight: bold;">Be-Well</a>
+            </div>
+            <ul class="menu-icons">    
+                <li> <a href="index.html" target="_self" >Home</a></li> 
+                <li> <a href="findadoc.jsp" target="_blank">Find a Doctor</a></li>
+                <li> <a href="login.html" target="_blank" >Login/SignUp</a></li>      
+                <li> <a href="bookapptform.jsp" target="_blank">Book Appointment</a></li>   
+                <li> <a href="feedback.html" target="_blank">Contact Us</a></li>  
+                <li> <a href="userpro.jsp" target="_blank">My Profile</a></li>
+            </ul>
+        </nav>
+        
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        
+        <div class="container">
+            <h1>Connect With Us</h1>
+            <p>We would love to respond to your queries and help you succeed.<br>
+                Feel free to get in touch with us.
+            </p>
+            <div class="contact_box">
+                <div class="contact-left">
+                    <h3>Send Feedback</h3>
+                    <form oninput="return validation()"  action="feedbackconnect.jsp" method="post">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>First Name</label>
+                                <input type="text" name="firstname" id="fname" placeholder="Arpit">
+                                <span id="errorfname" style="color: red"></span>
+                            </div>
+                            <div class="input-group">
+                                <label>Last Name</label>
+                                <input type="text" name="lastname" id="lname" placeholder="Singh">
+                                <span id="errorlname" style="color: red"></span>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" name="email" id="Email" placeholder="singhrdev@gmail.com">
+                                <span id="erroremail" style="color: red"></span>
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" name="contactnumber" id="Contactnumber" placeholder="+91 9892188221">
+                                <span id="errornumber" style="color: red"></span>
+                            </div>
+                        </div>
+                        <label >Message</label>
+                        <textarea rows="5" name="message" id="mes" placeholder="Your Message"></textarea>
+                        <span id="errormes" style="color: red"></span>
+                        <input type="submit" value="Submit" >
+                    </form>
+                    
+                </div>
+                <div class="contact-right">
+                    <h3>Reach us</h3>
+                    <table>
+                        <tr>
+                            <td> Email</td>
+                            <td><a href="mailto:contactus@gmail.com" style="color:white;">bewell0522@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td> Phone</td>
+                            <td><a href="tel:8581737494" style="color:white;">+91 8581737494</a></td>
+                        </tr>
+                        <tr>
+                            <td> Address</td>
+                            <td> Address, <br> 
+                                city, state <br>
+                                country, 244001</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <ul class="social-icons">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="index.html">Home |</a></li>
+                <li><a href="findadoc.jsp">Find a Doctor |</a></li>
+                <li><a href="feedback.html">Contact Us</a></li>
+            </ul>
+            <p>@2022 Be-Well Management system | All Rights Reserved</p>
+        </footer>
+        <!-- footer section ends  -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            function validation() {
+                var firstname = document.getElementById('fname').value;
+                var lastname = document.getElementById('lname').value;
+                var email = document.getElementById('Email').value;
+                var number = document.getElementById('Contactnumber').value;
+                var mes = document.getElementById('mes').value;
+
+                var fncheck = /^[A-Za-z]{3,30}$/;
+                var lncheck = /^[A-Za-z]{3,30}$/;
+                var emailcheck = /^[A-Za-z_0-9@.]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+                var numbercheck = /^[6789][0-9]{9}$/;
+
+                if (fncheck.test(firstname)) {
+                    document.getElementById('errorfname').innerHTML = " ";
+                } else {
+                    document.getElementById('errorfname').innerHTML = "Please include Upper and lower Case both";
+                    return false;
+                }
+
+                if (lncheck.test(lastname)) {
+                    document.getElementById('errorlname').innerHTML = " ";
+                } else {
+                    document.getElementById('errorlname').innerHTML = "Please include Upper and lower Case both";
+                    return false;
+                }
+
+                if (emailcheck.test(email)) {
+                    document.getElementById('erroremail').innerHTML = " ";
+                } else {
+                    document.getElementById('erroremail').innerHTML = "Invalid Email";
+                }
+
+                if (numbercheck.test(number)) {
+                    document.getElementById('errornumber').innerHTML = " ";
+                } else {
+                    document.getElementById('errornumber').innerHTML = "Invalid mobile number";
+                }
+                
+                if (mes.length < 10) {
+                    document.getElementById('errormes').innerHTML = "Message must be atleast 10 characters long.";
+                } else {
+                    document.getElementById('errormes').innerHTML = " ";
+                    return false;
+                }
+            }
+        </script>
+        <script>
+            var slideImg = document.getElementById("slideImg");
+            var images = new Array(
+                    "images/slider/1.jpg",
+                    "images/slider/5.jpg"
+                    );
+            var len = images.length;
+            var i = 0;
+            function slider() {
+                if (i > len - 1) {
+                    i = 0;
+                }
+                slideImg.src = images[i];
+                i++;
+                setTimeout('slider()', 3000);
+            }
+
+
+        </script>
+    </body>
+</html>

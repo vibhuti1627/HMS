@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#bed9ec;
+}
+.logo{
+    color: #edf0f1;
+    margin-right:auto;
+} 
+
+
+nav{
+
+    order:1;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background: black;
+}
+
+.menu-icons{
+    list-style: none;
+}
+
+.menu-icons li{
+    display:inline-block;
+    padding: 0px 20px;
+    font-family:"Monstserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    margin: 10px;
+    padding: 0;
+}
+
+.menu-icons li a{
+    transition: all 0.3s ease 0s;
+    font-family:"Monstserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-icons li a:hover{
+    color: #0088a9;
+}
+
+
+.menu-icons .menu{
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+.menu-icons .ddmenu{
+    position: absolute;
+    display: none;
+     width:100%;
+}
+.menu-icons .ddmenu a{
+    color: black;
+    cursor: pointer;
+}
+
+.menu:hover .ddmenu{
+    display: block;
+    width: 100px;
+    background-color: white;
+}
+
+.content{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 7px;
+    margin: 20px;
+}
+.content h2{    
+    text-align: center;
+    width: 90%;
+    background-color: white;
+}
+.content table{
+    margin-top: 20px;
+    width: 90%;
+    background-color: white;
+    margin-bottom: 30px;
+}
+.content table td{
+    border-style: solid;
+    border-color: gray;
+    border-width: thin;
+}
+.content table th{
+    background-color: #87AFC7;
+    font-weight: bold;
+    border-style: solid;
+    border-color: gray;
+    border-width: thin;
+}
+
+.adddoc{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 7px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 20px;
+}
+.adddoc h2{
+    margin-top: 10px;    
+    margin-bottom: 10px;
+}
+
+.adddoc input{
+    width: 70%;
+    height: 25px;
+    font-size: 15px;
+}
+.adddoc label{
+    font-size: 25px;
+    color: #6D7B8D;
+    margin-top: 15px;
+}
+.adddoc .box{
+    display: flex;
+}
+.adddoc .box input{
+    height: 25px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.userprofile{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-radius: 7px;
+}
+.userprofile h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.userprofile .usercontent .row{    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 3px solid #edf0f1;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px
+} 
+
+.userprofile .usercontent .cols{    
+    padding: 10px;
+    font-size: 20px;
+    width: 400px;
+}
+.userprofile .usercontent .cols input{
+    width: 300px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;  
+    margin-top: 190px;
+    position:relative;
+    width:91.75%;
+    background: black;
+    min-height: 100px;
+    padding: 20px 50px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social-icons,
+footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social-icons li,
+footer .menu li{
+    list-style: none;
+
+}
+
+footer .social-icons li a{
+    font-size: 2em;
+    color: #edf0f1;
+    padding-left: 5px;
+    margin: 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .menu li a{
+    font-size: 1em;
+    color: #edf0f1;
+    padding-left: 5px;
+    margin: 0 0px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+footer .social-icons li a:hover
+{
+    transform: translateY(-10px );
+}
+footer p
+{
+    background: #0088a9;
+    columns:#fff;
+    text-align: center;
+}
